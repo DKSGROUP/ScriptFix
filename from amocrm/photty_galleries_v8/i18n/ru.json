@@ -1,0 +1,10 @@
+{
+    "widget":{
+        "name":"Photty виджет",
+        "short_description":"Photty виджет",
+        "description":"Photty виджет"
+    },
+    "settings":{
+    	"tag":"Photty"
+    }
+}
