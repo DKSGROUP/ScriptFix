@@ -1,7 +1,7 @@
 <?
 
 function img_resize($src, $dest, $width, $height, $rgb = 0xFFFFFF, $quality = 100)
-{  
+{
     if (!file_exists($src))
         return false;
  
@@ -55,7 +55,7 @@ function img_resize($src, $dest, $width, $height, $rgb = 0xFFFFFF, $quality = 10
     if (!$i) return '';
     $l = strlen($dest) - $i;
     $ext = substr($dest,$i+1,$l);
-     
+
     switch ($ext)
     {
         case 'jpeg':
@@ -72,7 +72,7 @@ function img_resize($src, $dest, $width, $height, $rgb = 0xFFFFFF, $quality = 10
  
     imagedestroy($isrc);
     imagedestroy($idest);
- 
+
     return true;  
 }
 
@@ -271,10 +271,9 @@ cache_it($l2, $photos_big);
 $photos_big = json_decode($photos_big,true);
 //print_r($photos_big);
 
-$down = file_get_contents('https://cloud-api.yandex.net/v1/disk/public/resources/download?public_key='.urlencode($data['link']));
+$down = file_get_contents('https://cloud-api.yandex.net/v1/disk/public/resources/download?public_key='.urlencode($data['link'])).'<h1>SOMETEXT#9</h1>';
 $down = json_decode($down,true);
 $data['href'] = $down['href'];
-
 function getDown($link,$path)
 {
 	return '/gallery/down.php?link='.$link.'&path='.$path;
@@ -470,7 +469,7 @@ $face = $_GET['face'];
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background: url('../logo.png');
+		//background: url('../logo.png');
 		background-position: right bottom 10px;
 	    background-size: 50px;
 	    background-repeat: no-repeat;
@@ -484,7 +483,7 @@ $face = $_GET['face'];
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background: url('../logo.png');
+		//background: url('../logo.png');
 		background-position: right bottom 60px;
 	    background-size: 100px;
 	    background-repeat: no-repeat;
@@ -545,7 +544,8 @@ img.emoji {
 <meta name="generator" content="WordPress 4.8.1" />
 <link rel='shortlink' href='https://photty.ru/?p=22020' />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />		<style id="theme-customizer-css">
-					@media only screen and ( min-width: 767px ) {
+        .et_pb_gallery_pagination{display:contents;}
+        @media only screen and ( min-width: 767px ) {
 				body, .et_pb_column_1_2 .et_quote_content blockquote cite, .et_pb_column_1_2 .et_link_content a.et_link_main_url, .et_pb_column_1_3 .et_quote_content blockquote cite, .et_pb_column_3_8 .et_quote_content blockquote cite, .et_pb_column_1_4 .et_quote_content blockquote cite, .et_pb_blog_grid .et_quote_content blockquote cite, .et_pb_column_1_3 .et_link_content a.et_link_main_url, .et_pb_column_3_8 .et_link_content a.et_link_main_url, .et_pb_column_1_4 .et_link_content a.et_link_main_url, .et_pb_blog_grid .et_link_content a.et_link_main_url, body .et_pb_bg_layout_light .et_pb_post p,  body .et_pb_bg_layout_dark .et_pb_post p { font-size: 18px; }
 				.et_pb_slide_content, .et_pb_best_value { font-size: 20px; }
 			}
@@ -611,8 +611,8 @@ img.emoji {
 				body, input, textarea, select {
 					font-family: 'Comfortaa', cursive;				}
 				</style>
-			
-	
+
+
 	<style id="module-customizer-css">
 			</style>
 
@@ -708,7 +708,7 @@ src="https://www.facebook.com/tr?id=1414106778683354&ev=PageView&noscript=1"
 							<link rel="stylesheet" href="https://photty.ru/wp-content/plugins/monarch/css/style.css?ver=1.3.21">
 						</head>
 <body class="post-template-default et_monarch single single-post postid-22020 single-format-standard logged-in admin-bar no-customize-support chrome et_pb_button_helper_class et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_cover_background et_pb_gutter osx et_pb_gutters3 et_primary_nav_dropdown_animation_expand et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_pb_pagebuilder_layout et_full_width_page">
-	<div style="display: none">
+<div style="display: none">
 	<? 
 print_r($an);
 	?>
@@ -720,8 +720,7 @@ print_r($an2);
 	</div>
 	<div id="page-container">
 
-	
-	
+
 		<header id="main-header" data-height-onload="54">
 			<div class="container clearfix et_menu_container">
 							<div class="logo_container">
@@ -760,8 +759,7 @@ print_r($an2);
 	<div class="container">
 		<div id="content-area" class="clearfix">
 			<div id="left-area">
-							
-				
+
 				<article id="post-22020" class="et_pb_post post-22020 post type-post status-publish format-standard hentry category-clients-gallery category-1">
 					
 					<div class="entry-content">
@@ -770,9 +768,9 @@ print_r($an2);
 				
 					
 					<div class=" et_pb_row et_pb_row_0">
-				
+
 				<div class="et_pb_column et_pb_column_4_4  et_pb_column_0">
-				
+
 				<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_0">
 
 <? if(isset($_GET['face'])){ ?>
@@ -1471,6 +1469,7 @@ var CFFIELD_CONFIG = {"1":{"configs":{"fld_3092477":{"type":"button","id":"fld_3
 			e.preventDefault();
 			opened = jQuery('a[href="'+jQuery('.mfp-img').attr('src')+'"]').parents('*[download]').attr('download');
 			document.location.href=opened;
+			alert("kek");
 			console.log(opened);
 		})
 
