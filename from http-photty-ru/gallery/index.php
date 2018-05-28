@@ -1397,6 +1397,7 @@ var et_pb_custom = {"ajaxurl":"https:\/\/photty.ru\/wp-admin\/admin-ajax.php","i
 var CF_API_DATA = {"rest":{"root":"https:\/\/photty.ru\/wp-json\/cf-api\/v2\/","tokens":{"nonce":"https:\/\/photty.ru\/wp-json\/cf-api\/v2\/tokens\/form"},"nonce":"77e2d29e91"},"nonce":{"field":"_cf_verify"}};
 /* ]]> */
 </script>
+
 <script type='text/javascript' src='https://photty.ru/wp-content/plugins/caldera-forms/assets/build/js/caldera-forms-front.min.js?ver=1.5.5'></script>
 <div id="fb-root"></div><script type='text/javascript'>
 /* <![CDATA[ */
@@ -1435,9 +1436,13 @@ var CFFIELD_CONFIG = {"1":{"configs":{"fld_3092477":{"type":"button","id":"fld_3
 </script>
 <script type='text/javascript' src='/wp-content/themes/Divi/js/ga.js?ver=1'></script>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
 <script>
 	var fore;
+
 	jQuery(document).ready(function(){
+        alert("ready");
 		var opened = '';
 		var openedFace = '';
 		jQuery('body').on('click','.face',function(){
@@ -1460,16 +1465,20 @@ var CFFIELD_CONFIG = {"1":{"configs":{"fld_3092477":{"type":"button","id":"fld_3
 				},'json')
 			})
 		})
-		jQuery('.et_pb_gallery_image').click(function(){
+        alert("before");
+		//jQuery(document).on('click','.et_overlay', function(){
+        jQuery('.et_pb_gallery_image').click(function(){
+		    alert("showBtn");
 			setTimeout(showBtn,500);
 			opened = jQuery(this).parents('.et_pb_gallery_item').attr('download')
 		})
+        alert("after");
 
 		jQuery('body').on('click','a.download',function(e){
+            alert("click");
 			e.preventDefault();
 			opened = jQuery('a[href="'+jQuery('.mfp-img').attr('src')+'"]').parents('*[download]').attr('download');
 			document.location.href=opened;
-			alert("kek");
 			console.log(opened);
 		})
 
@@ -1528,8 +1537,8 @@ var CFFIELD_CONFIG = {"1":{"configs":{"fld_3092477":{"type":"button","id":"fld_3
 				jQuery('#fld_7167496_2').parent().append('<p>Отправлено</p>');
 			})
 		})
+        alert("readyend");
 	})
-
 	function showFaces (e) {
 		//alert(1);
 		fore=e;
