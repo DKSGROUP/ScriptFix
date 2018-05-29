@@ -271,7 +271,7 @@ cache_it($l2, $photos_big);
 $photos_big = json_decode($photos_big,true);
 //print_r($photos_big);
 
-$down = file_get_contents('https://cloud-api.yandex.net/v1/disk/public/resources/download?public_key='.urlencode($data['link'])).'<h1>SOMETEXT#9</h1>';
+$down = file_get_contents('https://cloud-api.yandex.net/v1/disk/public/resources/download?public_key='.urlencode($data['link']));
 $down = json_decode($down,true);
 $data['href'] = $down['href'];
 function getDown($link,$path)
@@ -469,7 +469,7 @@ $face = $_GET['face'];
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		//background: url('../logo.png');
+		//background: url('../logo.png'); /*скрыли лого с превью*/
 		background-position: right bottom 10px;
 	    background-size: 50px;
 	    background-repeat: no-repeat;
@@ -483,7 +483,7 @@ $face = $_GET['face'];
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		//background: url('../logo.png');
+		//background: url('../logo.png'); /*скрыли лого с фото*/
 		background-position: right bottom 60px;
 	    background-size: 100px;
 	    background-repeat: no-repeat;
@@ -544,7 +544,10 @@ img.emoji {
 <meta name="generator" content="WordPress 4.8.1" />
 <link rel='shortlink' href='https://photty.ru/?p=22020' />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />		<style id="theme-customizer-css">
+
+        /*Чтобы пагинация не налазила на превью и позволяла кликнуть*/
         .et_pb_gallery_pagination{display:contents;}
+
         @media only screen and ( min-width: 767px ) {
 				body, .et_pb_column_1_2 .et_quote_content blockquote cite, .et_pb_column_1_2 .et_link_content a.et_link_main_url, .et_pb_column_1_3 .et_quote_content blockquote cite, .et_pb_column_3_8 .et_quote_content blockquote cite, .et_pb_column_1_4 .et_quote_content blockquote cite, .et_pb_blog_grid .et_quote_content blockquote cite, .et_pb_column_1_3 .et_link_content a.et_link_main_url, .et_pb_column_3_8 .et_link_content a.et_link_main_url, .et_pb_column_1_4 .et_link_content a.et_link_main_url, .et_pb_blog_grid .et_link_content a.et_link_main_url, body .et_pb_bg_layout_light .et_pb_post p,  body .et_pb_bg_layout_dark .et_pb_post p { font-size: 18px; }
 				.et_pb_slide_content, .et_pb_best_value { font-size: 20px; }
@@ -1436,7 +1439,8 @@ var CFFIELD_CONFIG = {"1":{"configs":{"fld_3092477":{"type":"button","id":"fld_3
 </script>
 <script type='text/javascript' src='/wp-content/themes/Divi/js/ga.js?ver=1'></script>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Вручную подключили последнюю версию jQuery для корректной работы скриптов-->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 <script>
