@@ -1436,13 +1436,13 @@ var CFFIELD_CONFIG = {"1":{"configs":{"fld_3092477":{"type":"button","id":"fld_3
 </script>
 <script type='text/javascript' src='/wp-content/themes/Divi/js/ga.js?ver=1'></script>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 <script>
 	var fore;
 
 	jQuery(document).ready(function(){
-        alert("ready");
 		var opened = '';
 		var openedFace = '';
 		jQuery('body').on('click','.face',function(){
@@ -1465,22 +1465,18 @@ var CFFIELD_CONFIG = {"1":{"configs":{"fld_3092477":{"type":"button","id":"fld_3
 				},'json')
 			})
 		})
-        alert("before");
-		//jQuery(document).on('click','.et_overlay', function(){
+
         jQuery('.et_pb_gallery_image').click(function(){
-		    alert("showBtn");
 			setTimeout(showBtn,500);
-			opened = jQuery(this).parents('.et_pb_gallery_item').attr('download')
-		})
-        alert("after");
+			opened = jQuery(this).parents('.et_pb_gallery_item').attr('download');
+		});
 
 		jQuery('body').on('click','a.download',function(e){
-            alert("click");
 			e.preventDefault();
 			opened = jQuery('a[href="'+jQuery('.mfp-img').attr('src')+'"]').parents('*[download]').attr('download');
 			document.location.href=opened;
 			console.log(opened);
-		})
+		});
 
 		jQuery('.window_nova .back2').click(function(){
 			jQuery('.window_nova').hide();
@@ -1537,12 +1533,10 @@ var CFFIELD_CONFIG = {"1":{"configs":{"fld_3092477":{"type":"button","id":"fld_3
 				jQuery('#fld_7167496_2').parent().append('<p>Отправлено</p>');
 			})
 		})
-        alert("readyend");
 	})
 	function showFaces (e) {
 		//alert(1);
 		fore=e;
-		console.log('test');
   		if((!jQuery(e.target).hasClass('mfp-content'))&&(!jQuery(e.target).hasClass('download')))
   			return true;
 		var del = (jQuery('.mfp-img').width()/1280)>(jQuery('.mfp-img').height()/1280)?(jQuery('.mfp-img').width()/1280):(jQuery('.mfp-img').height()/1280);
