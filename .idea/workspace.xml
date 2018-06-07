@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f556be89-4dfe-4fe7-bb22-7f1e834d79f2" name="Default" comment="" />
+    <list default="true" id="f556be89-4dfe-4fe7-bb22-7f1e834d79f2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/from http-photty-ru/gallery/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/from http-photty-ru/gallery/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/from http-photty-ru/gallery/ydisk_save.php" beforeDir="false" afterPath="$PROJECT_DIR$/from http-photty-ru/gallery/ydisk_save.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,17 +14,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/form.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="363">
+              <caret line="1541" column="77" selection-end-line="1672" selection-end-column="7" />
               <folding>
+                <element signature="e#4195#6730#0#PHP" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -28,24 +29,108 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="del.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/del.php">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="findfacecheck.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/findfacecheck.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3720">
+              <caret line="248" selection-start-line="248" selection-end-line="248" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ff.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/ff.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5.gif" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/5.gif">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="ydisk_save.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/ydisk_save.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="112" column="8" selection-end-line="117" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ydisk.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/data/ydisk.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="81" selection-start-column="42" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ydisk_old.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/data/ydisk_old.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="81" selection-start-column="42" selection-end-column="81" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/from amocrm/photty_galleries_v8/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6097">
-              <folding>
-                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>OLOLOLOLOLOLOLO</find>
+      <find>ydisk_save.ph</find>
+      <find>.data-ydisk</find>
+      <find>data-ydisk</find>
+      <find>findfacecheck.php</find>
+      <find>ff.php</find>
+      <find>myface-form</find>
+      <find>myface</find>
+      <find>addEventListener</find>
+      <find>.change</find>
+      <find>change</find>
+      <find>fld_3092477_1_btn</find>
+      <find>form').submit</find>
+      <find>.et_pb_gallery_image</find>
+      <find>hiddenUploaded</find>
+      <find>mfp</find>
+      <find>&lt;script</find>
+      <find>none !important</find>
+      <find>.addClass(&quot;show&quot;)</find>
+      <find>hidden</find>
+      <find>et_pb_gallery_image landscape</find>
+      <find>et-waypo</find>
+      <find>a href=&quot;</find>
+      <find>et-waypoint</find>
+      <find>et-wa</find>
+      <find>$data</find>
+      <find>&lt;?</find>
+      <find>class=&quot;data</find>
+      <find>START</find>
+      <find>ydisk_save</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/from http-photty-ru/gallery/findfacecheck.php" />
+        <option value="$PROJECT_DIR$/from http-photty-ru/gallery/ydisk_save.php" />
+        <option value="$PROJECT_DIR$/from http-photty-ru/gallery/index.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -59,9 +144,9 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="99" />
+    <option name="y" value="148" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -106,13 +191,6 @@
               <item name="from http-photty-ru" type="462c0819:PsiDirectoryNode" />
               <item name="gallery" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ScriptFix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ScriptFix" type="462c0819:PsiDirectoryNode" />
-              <item name="from http-photty-ru" type="462c0819:PsiDirectoryNode" />
-              <item name="gallery" type="462c0819:PsiDirectoryNode" />
-              <item name="NCL" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -120,6 +198,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Applications/MAMP/htdocs/DKS-Group/ScriptFix/from http-photty-ru/gallery/ydisk_save.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -147,35 +226,36 @@
       <option name="presentableId" value="Default" />
       <updated>1526651870491</updated>
       <workItem from="1526651871903" duration="1124000" />
+      <workItem from="1528367954287" duration="18326000" />
+      <workItem from="1528404148688" duration="775000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1124000" />
+    <option name="totallyTimeSpent" value="20225000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="99" y="148" width="1382" height="744" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24891461" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,31 +265,147 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/form.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/from amocrm/photty_galleries_v8/script.js">
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6097">
+        <state relative-caret-position="23160">
+          <caret line="1544" column="90" selection-end-line="1672" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+            <element signature="e#4195#6730#0#PHP" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/findfacecheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3720">
+          <caret line="248" lean-forward="true" selection-start-line="248" selection-end-line="248" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/ff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/5.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/ydisk_save.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="63" lean-forward="true" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/data/ydisk.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="81" selection-start-column="42" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/data/ydisk_old.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="81" selection-start-column="42" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from amocrm/photty_galleries_v8/script.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/form.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
+            <element signature="e#4195#6730#0#PHP" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/from amocrm/photty_galleries_v8/script.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/del.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/form.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from amocrm/photty_galleries_v8/script.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/del.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/data/ydisk.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="81" selection-start-column="42" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/findfacecheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3720">
+          <caret line="248" selection-start-line="248" selection-end-line="248" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/5.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/ff.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/index_old.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="756" column="189" lean-forward="true" selection-start-line="756" selection-start-column="189" selection-end-line="756" selection-end-column="189" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/data/ydisk_old.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="81" selection-start-column="42" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/ydisk_save.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="112" column="8" selection-end-line="117" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/from http-photty-ru/gallery/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="1541" column="77" selection-end-line="1672" selection-end-column="7" />
+          <folding>
+            <element signature="e#4195#6730#0#PHP" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

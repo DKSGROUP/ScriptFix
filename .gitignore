@@ -30,3 +30,4 @@ tests/_support/_generated
 /.vagrant
 .idea/workspace.xml
 from http-photty-ru/gallery/cache.json
+.idea/workspace.xml
