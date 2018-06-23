@@ -250,7 +250,7 @@ $sum = $positions['sum'];
 
 $l1 = 'https://cloud-api.yandex.net/v1/disk/public/resources?limit=10000&preview_size=250x160&preview_crop=true&public_key='.urlencode($link);
 $cache = get_cache($l1);
-if($cache)
+if(false /*$cache*/)
     $photos = $cache;
 else
     $photos = file_get_contents($l1);
@@ -261,7 +261,7 @@ $photos = json_decode($photos,true);
 $l2 = 'https://cloud-api.yandex.net/v1/disk/public/resources?limit=10000&preview_size=XXXL&public_key='.urlencode($link);
 
 $cache = get_cache($l2);
-if($cache)
+if(false /*$cache*/)
     $photos_big = $cache;
 else
     $photos_big = file_get_contents($l2);
@@ -312,7 +312,7 @@ $face = $_GET['face'];
 <!--<![endif]-->
 <head>
     <meta charset="UTF-8" />
-
+    <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex,follow" />
     <link rel="pingback" href="https://photty.ru/xmlrpc.php" />
@@ -499,8 +499,6 @@ $face = $_GET['face'];
     <!-- All in One SEO Pack 2.3.2.3 by Michael Torbert of Semper Fi Web Design[1016,1050] -->
     <meta name="robots" content="noindex,follow" />
     <!-- /all in one seo pack -->
-    <link rel="dns-prefetch" href="//connect.facebook.net" />
-    <link rel='dns-prefetch' href='//connect.facebook.net' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
     <script type="text/javascript">
@@ -522,26 +520,19 @@ $face = $_GET['face'];
         }
     </style>
     <link rel='stylesheet' id='dashicons-css'  href='https://photty.ru/wp-includes/css/dashicons.min.css?ver=4.8.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='admin-bar-css'  href='https://photty.ru/wp-includes/css/admin-bar.min.css?ver=4.8.1' type='text/css' media='all' />
     <link rel='stylesheet' id='menu-icons-extra-css'  href='https://photty.ru/wp-content/plugins/menu-icons/css/extra.min.css?ver=0.9.2' type='text/css' media='all' />
     <link rel='stylesheet' id='menu-image-css'  href='https://photty.ru/wp-content/plugins/menu-image/menu-image.css?ver=1.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='twenty-twenty-css'  href='https://photty.ru/wp-content/plugins/smart-before-after-viewer/includes/twentytwenty/css/twentytwenty.min.css?ver=4.8.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='divi-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext' type='text/css' media='all' />
-    <link rel='stylesheet' id='et-gf-comfortaa-css'  href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700&#038;subset=latin,cyrillic-ext,greek,latin-ext,cyrillic' type='text/css' media='all' />
+    <link rel='stylesheet' id='divi-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='et-gf-comfortaa-css'  href='//fonts.googleapis.com/css?family=Comfortaa:400,300,700&#038;subset=latin,cyrillic-ext,greek,latin-ext,cyrillic' type='text/css' media='all' />
     <link rel='stylesheet' id='divi-style-css'  href='https://photty.ru/wp-content/themes/Divi/style.css?ver=2.7.5' type='text/css' media='all' />
     <link rel='stylesheet' id='et-shortcodes-css-css'  href='https://photty.ru/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes.css?ver=2.7.5' type='text/css' media='all' />
-    <link rel='stylesheet' id='cf-front-css'  href='https://photty.ru/wp-content/plugins/caldera-forms/assets/build/css/caldera-forms-front.min.css?ver=1.5.5' type='text/css' media='all' />
     <link rel='stylesheet' id='et-shortcodes-responsive-css-css'  href='https://photty.ru/wp-content/themes/Divi/epanel/shortcodes/css/shortcodes_responsive.css?ver=2.7.5' type='text/css' media='all' />
     <link rel='stylesheet' id='magnific-popup-css'  href='https://photty.ru/wp-content/themes/Divi/includes/builder/styles/magnific_popup.css?ver=2.7.5' type='text/css' media='all' />
     <script type='text/javascript' src='https://photty.ru/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
     <script type='text/javascript' src='https://photty.ru/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-    <script type='text/javascript' src='https://photty.ru/wp-content/plugins/WP_Estimation_Form/assets/js/lfb_frontend.min.js?ver=9.502'></script>
-    <script type='text/javascript' src='https://photty.ru/wp-content/plugins/smart-before-after-viewer/includes/twentytwenty/js/jquery.event.move.min.js?ver=4.8.1'></script>
-    <script type='text/javascript' src='https://photty.ru/wp-content/plugins/smart-before-after-viewer/includes/twentytwenty/js/jquery.twentytwenty.min.js?ver=4.8.1'></script>
     <link rel='https://api.w.org/' href='https://photty.ru/wp-json/' />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://photty.ru/xmlrpc.php?rsd" />
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://photty.ru/wp-includes/wlwmanifest.xml" />
-    <link rel='next' title='M1972' href='https://photty.ru/m1972/' />
     <meta name="generator" content="WordPress 4.8.1" />
     <link rel='shortlink' href='https://photty.ru/?p=22020' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />		<style id="theme-customizer-css">
@@ -633,50 +624,7 @@ $face = $_GET['face'];
             * html body { margin-top: 46px !important; }
         }
     </style>
-    <!-- Скрипт Universal Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-73114015-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    <!-- Скрипт совместного подключения Calltouch и Universal Analytics -->
-    <script type="text/javascript">
-        function ct(w,d,e,c){
-            var a='all',b='tou',src=b+'c'+'h';src='m'+'o'+'d.c'+a+src;
-            var jsHost="https://"+src,s=d.createElement(e),p=d.getElementsByTagName(e)[0];
-            s.async=1;s.src=jsHost+"."+"r"+"u/d_client.js?param;"+(c?"client_id"+c+";":"")
-                +"ref"+escape(d.referrer)+";url"+escape(d.URL)+";cook"+escape(d.cookie)+";";
-            p.parentNode.insertBefore(s,p);
-            if(!w.jQuery){var jq=d.createElement(e);
-                jq.src=jsHost+"."+"r"+'u/js/jquery-1.7.min.js';
-                p.parentNode.insertBefore(jq,p);}}
-        if(!!window.GoogleAnalyticsObject){window[window.GoogleAnalyticsObject](function(tracker){
-            if (!!window[window.GoogleAnalyticsObject].getAll()[0])
-            {ct(window,document,'script', window[window.GoogleAnalyticsObject].getAll()[0].get('clientId'))}
-            else{ct(window,document,'script', null);}});
-        }else{ct(window,document,'script', null);}
-    </script>
-
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-            document,'script','https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1414106778683354'); // Insert your pixel ID here.
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=1414106778683354&ev=PageView&noscript=1"
-        /></noscript>
-    <!-- DO NOT MODIFY -->
-    <!-- End Facebook Pixel Code -->
     <link rel="icon" href="https://photty.ru/wp-content/uploads//2016/08/cropped-Photty_LOGO-32x32.png" sizes="32x32" />
     <link rel="icon" href="https://photty.ru/wp-content/uploads//2016/08/cropped-Photty_LOGO-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon-precomposed" href="https://photty.ru/wp-content/uploads//2016/08/cropped-Photty_LOGO-180x180.png" />
@@ -709,9 +657,9 @@ $face = $_GET['face'];
 
 
     </style>
-    <link rel="stylesheet" href="https://photty.ru/wp-content/plugins/monarch/css/style.css?ver=1.3.21">
+
 </head>
-<body class="post-template-default et_monarch single single-post postid-22020 single-format-standard logged-in admin-bar no-customize-support chrome et_pb_button_helper_class et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_cover_background et_pb_gutter osx et_pb_gutters3 et_primary_nav_dropdown_animation_expand et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_pb_pagebuilder_layout et_full_width_page">
+<body class="post-template-default et_monarch single single-post postid-22020 single-format-standard no-customize-support chrome et_pb_button_helper_class et_fullwidth_nav et_fullwidth_secondary_nav et_fixed_nav et_show_nav et_cover_background et_pb_gutter osx et_pb_gutters3 et_primary_nav_dropdown_animation_expand et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_pb_pagebuilder_layout et_full_width_page">
 <div style="display: none">
     <?
     print_r($an);
@@ -735,8 +683,34 @@ $face = $_GET['face'];
             </div>
             <div id="et-top-navigation" data-height="54" data-fixed-height="30">
                 <nav id="top-menu-nav">
-                    <ul id="top-menu" class="nav"><li id="menu-item-714" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-714"><a href="tel:+74997033992" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="https://photty.ru/wp-content/uploads//2016/02/phone-icon1-36x36.png" class="menu-image menu-image-title-after" alt="" srcset="https://photty.ru/wp-content/uploads/2016/02/phone-icon1-36x36.png 36w, https://photty.ru/wp-content/uploads/2016/02/phone-icon1-150x150.png 150w, https://photty.ru/wp-content/uploads/2016/02/phone-icon1-298x300.png 298w, https://photty.ru/wp-content/uploads/2016/02/phone-icon1-24x24.png 24w, https://photty.ru/wp-content/uploads/2016/02/phone-icon1-48x48.png 48w, https://photty.ru/wp-content/uploads/2016/02/phone-icon1.png 787w" sizes="(max-width: 36px) 100vw, 36px" /><span class="menu-image-title">+7 499 703 3992</span></a></li>
-                        <li id="menu-item-944" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-944"><a href="mailto:welcome@photty.ru" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="https://photty.ru/wp-content/uploads//2016/02/e-mail-icon2-36x36.png" class="menu-image menu-image-title-after" alt="" srcset="https://photty.ru/wp-content/uploads/2016/02/e-mail-icon2-36x36.png 36w, https://photty.ru/wp-content/uploads/2016/02/e-mail-icon2-150x150.png 150w, https://photty.ru/wp-content/uploads/2016/02/e-mail-icon2-298x300.png 298w, https://photty.ru/wp-content/uploads/2016/02/e-mail-icon2-24x24.png 24w, https://photty.ru/wp-content/uploads/2016/02/e-mail-icon2-48x48.png 48w, https://photty.ru/wp-content/uploads/2016/02/e-mail-icon2.png 787w" sizes="(max-width: 36px) 100vw, 36px" /><span class="menu-image-title">welcome@photty.ru</span></a></li>
+                    <ul id="top-menu" class="nav"><li id="menu-item-27115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27115"><a href="//photty.ru/portfolio" class="menu-image-title-after"><span class="menu-image-title">Портфолио</span></a></li>
+                        <li id="menu-item-27114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-27114"><a href="//photty.ru" class="menu-image-title-after"><span class="menu-image-title">Что мы снимаем</span></a>
+                            <ul  class="sub-menu">
+                                <li id="menu-item-27117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27117"><a href="//photty.ru/event-photo/private-events/" class="menu-image-title-after"><span class="menu-image-title">Частные мероприятия</span></a>
+                                    <ul  class="sub-menu">
+                                        <li id="menu-item-27344" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27344"><a href="//photty.ru/adult-bday/" class="menu-image-title-after"><span class="menu-image-title">День Рождения</span></a></li>
+                                        <li id="menu-item-27345" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27345"><a href="//photty.ru/kids-bday/" class="menu-image-title-after"><span class="menu-image-title">Детский День Рождения</span></a></li>
+                                        <li id="menu-item-27346" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27346"><a href="//photty.ru/graduation/" class="menu-image-title-after"><span class="menu-image-title">Выпускной</span></a></li>
+                                        <li id="menu-item-27453" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27453"><a href="//photty.ru/baptizing" class="menu-image-title-after"><span class="menu-image-title">Крещение</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-27118" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27118"><a href="//photty.ru/event-photo/corporate" class="menu-image-title-after"><span class="menu-image-title">Бизнес мероприятия</span></a>
+                                    <ul  class="sub-menu">
+                                        <li id="menu-item-27171" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27171"><a href="//photty.ru/exhibition/" class="menu-image-title-after"><span class="menu-image-title">Выставки</span></a></li>
+                                        <li id="menu-item-27205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27205"><a href="//photty.ru/conference/" class="menu-image-title-after"><span class="menu-image-title">Конференции</span></a></li>
+                                        <li id="menu-item-27347" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27347"><a href="//photty.ru/corporate-party/" class="menu-image-title-after"><span class="menu-image-title">Корпоративы</span></a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-27069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27069"><a href="https://photty.ru/food-photo/" class="menu-image-title-after"><span class="menu-image-title">Блюда</span></a></li>
+                                <li id="menu-item-27074" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27074"><a href="https://photty.ru/portrait/" class="menu-image-title-after"><span class="menu-image-title">Портреты</span></a></li>
+                                <li id="menu-item-28216" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28216"><a href="https://photty.ru/weddings/" class="menu-image-title-after"><span class="menu-image-title">Свадьбы</span></a></li>
+                                <li id="menu-item-27070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27070"><a href="https://photty.ru/family-photo/" class="menu-image-title-after"><span class="menu-image-title">Cемейное фото</span></a></li>
+                                <li id="menu-item-27072" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27072"><a href="https://photty.ru/product/" class="menu-image-title-after"><span class="menu-image-title">Каталог</span></a></li>
+                                <li id="menu-item-27071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27071"><a href="https://photty.ru/video/" class="menu-image-title-after"><span class="menu-image-title">Видео</span></a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-714" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-714"><a href="tel:+74997033992" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="https://photty.ru/wp-content/uploads//2018/04/phone-icon1-150x150-36x36-proper.png" class="menu-image menu-image-title-after" alt="позвонить в фотти" srcset="https://photty.ru/wp-content/uploads/2018/04/phone-icon1-150x150-36x36-proper.png 36w, https://photty.ru/wp-content/uploads/2018/04/phone-icon1-150x150-36x36-proper-24x24.png 24w" sizes="(max-width: 36px) 100vw, 36px" /><span class="menu-image-title">+7 499 703 3992</span></a></li>
+                        <li id="menu-item-944" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-944"><a href="mailto:welcome@photty.ru" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="36" src="https://photty.ru/wp-content/uploads//2018/04/e-mail-icon2-36x36-proper.png" class="menu-image menu-image-title-after" alt="" srcset="https://photty.ru/wp-content/uploads/2018/04/e-mail-icon2-36x36-proper.png 36w, https://photty.ru/wp-content/uploads/2018/04/e-mail-icon2-36x36-proper-24x24.png 24w" sizes="(max-width: 36px) 100vw, 36px" /><span class="menu-image-title">welcome@photty.ru</span></a></li>
                     </ul>						</nav>
 
 
@@ -900,34 +874,7 @@ $face = $_GET['face'];
 
                                         <div class="">
 
-                                            <div class="et_pb_code et_pb_module  et_pb_code_0">
-
-                                                <div class="et_pb_code et_pb_module  et_pb_code_0">
-                                                    <div class="et_social_inline et_social_mobile_on et_social_inline_custom">
-                                                        <div class="et_social_networks et_social_autowidth et_social_flip et_social_rectangle et_social_left et_social_no_animation et_social_nospace et_social_outer_dark">
-
-                                                            <ul class="et_social_icons_container"><li class="et_social_facebook">
-                                                                    <a href="http://www.facebook.com/sharer.php?u=<?='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" class="et_social_share" rel="nofollow" data-social_name="facebook" data-post_id="26767" data-social_type="share" data-location="inline">
-                                                                        <i class="et_social_icon et_social_icon_facebook"></i><span class="et_social_overlay"></span>
-                                                                    </a>
-                                                                </li><li class="et_social_vkontakte">
-                                                                    <a href="http://vk.com/share.php?url=<?='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" class="et_social_share" rel="nofollow" data-social_name="vkontakte" data-post_id="26767" data-social_type="share" data-location="inline">
-                                                                        <i class="et_social_icon et_social_icon_vkontakte"></i><span class="et_social_overlay"></span>
-                                                                    </a>
-                                                                </li><li class="et_social_gmail">
-                                                                    <a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;su=general%20gallery%20sample&amp;body=<?='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" class="et_social_share" rel="nofollow" data-social_name="gmail" data-post_id="26767" data-social_type="share" data-location="inline">
-                                                                        <i class="et_social_icon et_social_icon_gmail"></i><span class="et_social_overlay"></span>
-                                                                    </a>
-                                                                </li><li class="et_social_like">
-                                                                    <a href="" class="et_social_share" rel="nofollow" data-social_name="like" data-post_id="26767" data-social_type="like" data-location="inline">
-                                                                        <i class="et_social_icon et_social_icon_like"></i><span class="et_social_overlay"></span>
-                                                                    </a>
-                                                                </li></ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div> <!-- .et_pb_code -->
+                                            <!-- .et_pb_code -->
                                             <? if((!isset($_GET['face']))&&($status>0)){ ?>
                                                 <div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_1">
 
@@ -1078,141 +1025,63 @@ $face = $_GET['face'];
 
                                     </div> <!-- .et_pb_section -->
                                 <? } ?>
-                                <div class="et_pb_section  et_pb_section_3 et_pb_with_background et_section_regular">
+                                <div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
 
 
 
-                                    <div class=" et_pb_row et_pb_row_5">
 
-                                        <div class="et_pb_column et_pb_column_4_4  et_pb_column_7">
+                                    <div class=" et_pb_row et_pb_row_4">
+                                        <div class="et_pb_column et_pb_column_4_4  et_pb_column_6 et_pb_css_mix_blend_mode_passthrough et-last-child">
+
 
                                             <div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_5">
 
 
-                                                <h2 style="text-align: center;">ВЫЗВАТЬ ФОТОГРАФА ПРЯМО СЕЙЧАС?</h2>
-
-
+                                                <div class="et_pb_text_inner">
+                                                    <p><a name="orderamocrm"></a></p>
+                                                    <h2 style="text-align: center;">ЗАКАЗАТЬ ФОТОГРАФА НА МЕРОПРИЯТИЕ?</h2>
+                                                </div>
                                             </div> <!-- .et_pb_text -->
                                         </div> <!-- .et_pb_column -->
 
-                                    </div> <!-- .et_pb_row --><div class=" et_pb_row et_pb_row_6">
 
-                                        <div class="et_pb_column et_pb_column_1_2  et_pb_column_8">
+                                    </div> <!-- .et_pb_row --><div class=" et_pb_row et_pb_row_5">
+                                        <div class="et_pb_column et_pb_column_1_2  et_pb_column_7 et_pb_css_mix_blend_mode_passthrough">
+
 
                                             <div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_6">
 
 
-                                                <h3></h3>
-                                                <h3>Это просто как раз-два-три!</h3>
-                                                <ol>
-                                                    <li>Заполните форму;</li>
-                                                    <li>Укажите свои контакты;</li>
-                                                    <li>Подтвердите менеджеру заказ.</li>
-                                                </ol>
-                                                <h4>все!</h4>
-                                                <p>Пожалуйста, обратите внимание, что мы не сможем связаться с вами, если в форме будут указаны ошибочные контакты. Спасибо!</p>
-                                                <p style="text-align: center;">
-
-
-                                                </p></div> <!-- .et_pb_text -->
-                                        </div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_2  et_pb_column_9">
-
-                                            <div class="et_pb_code et_pb_module  et_pb_code_3">
-                                                <a name="orderamocrm"></a><div class="caldera-grid" id="caldera_form_2" data-cf-ver="1.5.5" data-cf-form-id="CF59abe5c476e78"><div id="caldera_notices_2" data-spinner="https://photty.ru/wp-admin/images/spinner.gif"></div><form data-instance="2" class="CF59abe5c476e78 caldera_forms_form cfajax-trigger _tisBound" method="POST" enctype="multipart/form-data" role="form" id="CF59abe5c476e78_2" data-target="#caldera_notices_2" data-template="#cfajax_CF59abe5c476e78-tmpl" data-cfajax="CF59abe5c476e78" data-load-element="_parent" data-load-class="cf_processing" data-post-disable="0" data-action="cf_process_ajax_submit" data-request="https://photty.ru/cf-api/CF59abe5c476e78" data-hiderows="true">
-                                                        <input type="hidden" id="_cf_verify_CF59abe5c476e78" name="_cf_verify" value="f9d6e5249e" data-nonce-time="1507578620"><input type="hidden" name="_wp_http_referer" value="/general-gallery-sample/"><input type="hidden" name="_cf_frm_id" value="CF59abe5c476e78">
-                                                        <input type="hidden" name="_cf_frm_ct" value="2">
-                                                        <input type="hidden" name="cfajax" value="CF59abe5c476e78">
-                                                        <input type="hidden" name="_cf_cr_pst" value="26767">
-                                                        <div class="hide" style="display:none; overflow:hidden;height:0;width:0;">
-                                                            <label>Company</label><input type="text" name="company" value="" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
-                                                        </div><div id="CF59abe5c476e78_2-row-1" class="row  first_row"><div class="col-sm-12  single"><div role="field" data-field-wrapper="fld_185917" class="form-group" id="fld_185917_2-wrap">
-                                                                    <label id="fld_185917Label" for="fld_185917_2" class="control-label">Как вас зовут? <span aria-hidden="true" role="presentation" class="field_required" style="color:#ee0000;">*</span></label>
-                                                                    <div class="">
-                                                                        <input required="" type="text" data-field="fld_185917" class=" form-control" id="fld_185917_2" name="fld_185917" value="" data-type="text" aria-required="true" aria-labelledby="fld_185917Label">			</div>
-                                                                </div>
-                                                            </div></div><div id="CF59abe5c476e78_2-row-2" class="row "><div class="col-sm-12  single"><div role="field" data-field-wrapper="fld_2254781" class="form-group" id="fld_2254781_2-wrap">
-                                                                    <label id="fld_2254781Label" for="fld_2254781_2" class="control-label">Телефон для связи <span aria-hidden="true" role="presentation" class="field_required" style="color:#ee0000;">*</span></label>
-                                                                    <div class="">
-                                                                        <input placeholder="+74997033992" +99="" 99="" 999="" 9999="" required="" type="phone" data-field="fld_2254781" class=" form-control" id="fld_2254781_2" name="fld_2254781" value="" data-type="phone" aria-required="true" aria-labelledby="fld_2254781Label">			</div>
-                                                                </div>
-                                                                <div role="field" data-field-wrapper="fld_7900587" class="form-group" id="fld_7900587_2-wrap">
-                                                                    <label id="fld_7900587Label" for="fld_7900587_2" class="control-label">Email <span aria-hidden="true" role="presentation" class="field_required" style="color:#ee0000;">*</span></label>
-                                                                    <div class="">
-                                                                        <input placeholder="welcome@photty.ru" required="" type="email" data-field="fld_7900587" class=" form-control" id="fld_7900587_2" name="fld_7900587" value="" data-type="email" aria-required="true" aria-labelledby="fld_7900587Label">			</div>
-                                                                </div>
-                                                            </div></div><div id="CF59abe5c476e78_2-row-3" class="row  last_row"><div class="col-sm-12  single"><div role="field" data-field-wrapper="fld_4089741" class="form-group" id="fld_4089741_2-wrap">
-                                                                    <label id="fld_4089741Label" for="fld_4089741_2" class="control-label">Комментарии</label>
-                                                                    <div class="">
-                                                                        <textarea name="fld_4089741" value="" data-field="fld_4089741" class="form-control" id="fld_4089741_2" rows="4" aria-labelledby="fld_4089741Label"></textarea>
-                                                                    </div>
-                                                                </div>
-                                                                <div role="field" data-field-wrapper="fld_7167496" class="form-group" id="fld_7167496_2-wrap">
-                                                                    <div class="">
-                                                                        <input class="btn btn-default" type="submit" name="fld_7167496" id="fld_7167496_2" value="ЗАКАЗАТЬ" data-field="fld_7167496">
-                                                                    </div>
-                                                                </div>
-                                                                <input class="button_trigger_2" type="hidden" name="fld_7167496" id="fld_7167496_2_btn" value="" data-field="fld_7167496">
-                                                            </div></div></form>
+                                                <div class="et_pb_text_inner">
+                                                    <h3></h3>
+                                                    <h3>Чтобы заказать фотографа на мероприятие :</h3>
+                                                    <ol>
+                                                        <li>Укажите имя, телефон и e-mail;</li>
+                                                        <li>Отметьте в комментариях формат мероприятия;</li>
+                                                        <li>Подтвердите заказ.</li>
+                                                    </ol>
+                                                    <p style="text-align: left;">Обратите внимание, что мы не сможем связаться с вами, если в форме указаны ошибочные контакты. Спасибо!</p>
+                                                    <div id="s3gt_translate_tooltip_mini" class="s3gt_translate_tooltip_mini_box" style="background: initial !important; border: initial !important; border-radius: initial !important; border-spacing: initial !important; border-collapse: initial !important; direction: ltr !important; flex-direction: initial !important; font-weight: initial !important; height: initial !important; letter-spacing: initial !important; min-width: initial !important; max-width: initial !important; min-height: initial !important; max-height: initial !important; margin: auto !important; outline: initial !important; padding: initial !important; position: absolute; table-layout: initial !important; text-align: initial !important; text-shadow: initial !important; width: initial !important; word-break: initial !important; word-spacing: initial !important; overflow-wrap: initial !important; box-sizing: initial !important; display: initial !important; color: inherit !important; font-size: 13px !important; font-family: X-LocaleSpecific, sans-serif, Tahoma, Helvetica !important; line-height: 13px !important; vertical-align: top !important; white-space: inherit !important; left: 833px; top: 258px; opacity: 0.65;"></div>
                                                 </div>
-                                                <p>Нажимая кнопку "ЗАКАЗАТЬ", я даю&nbsp;<a href="//photty.ru/agreement/" target="_blank" rel="noopener">согласие</a>&nbsp;на обработку персональных данных.</p>
+                                            </div> <!-- .et_pb_text -->
+                                        </div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_2  et_pb_column_8 et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                            <div class="et_pb_code et_pb_module  et_pb_code_1">
+
+
+                                                <div class="et_pb_code_inner">
+                                                    <div class="uCalc_88831"></div><script> var widgetOptions88831 = { bg_color: "transparent" }; (function() { var a = document.createElement("script"), h = "head"; a.async = true; a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=88831&t="+Math.floor(new Date()/18e5); document.getElementsByTagName(h)[0].appendChild(a) })();</script>
+                                                </div> <!-- .et_pb_code_inner -->
                                             </div> <!-- .et_pb_code -->
                                         </div> <!-- .et_pb_column -->
 
-                                    </div> <!-- .et_pb_row -->
-
-                                </div>
-                                <div class="et_pb_section  et_pb_section_5 et_pb_with_background et_section_regular">
-
-
-
-                                    <div class=" et_pb_row et_pb_row_7">
-
-                                        <div class="et_pb_column et_pb_column_4_4  et_pb_column_9">
-
-                                            <div class="et_pb_module et_pb_countdown_timer et_pb_bg_layout_dark  et_pb_countdown_timer_0" data-end-timestamp="1509483540">
-                                                <div class="et_pb_countdown_timer_container clearfix">
-                                                    <h4 class="title">ЗАКАЖИТЕ СЕЙЧАС СЪЕМКУ В СЛЕДУЮЩЕМ МЕСЯЦЕ И ПОЛУЧИТЕ СКИДКУ 10%</h4>
-                                                    <div class="days section values" data-short="Day" data-full="Day(s)">
-                                                        <p class="value">020</p>
-                                                        <p class="label">Day(s)</p>
-                                                    </div>
-                                                    <div class="sep section"><p>:</p></div>
-                                                    <div class="hours section values" data-short="Hrs" data-full="Hour(s)">
-                                                        <p class="value">14</p>
-                                                        <p class="label">Hour(s)</p>
-                                                    </div>
-                                                    <div class="sep section"><p>:</p></div>
-                                                    <div class="minutes section values" data-short="Min" data-full="Minute(s)">
-                                                        <p class="value">03</p>
-                                                        <p class="label">Minute(s)</p>
-                                                    </div>
-                                                    <div class="sep section"><p>:</p></div>
-                                                    <div class="seconds section values" data-short="Sec" data-full="Second(s)">
-                                                        <p class="value">04</p>
-                                                        <p class="label">Second(s)</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> <!-- .et_pb_column -->
-
-                                    </div> <!-- .et_pb_row --><div class=" et_pb_row et_pb_row_8">
-
-                                        <div class="et_pb_column et_pb_column_4_4  et_pb_column_10">
-
-                                            <div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_right  et_pb_text_6">
-
-
-                                                <p>Скидка действительна при 100%-й предоплате съемки в следующем месяце, только для заказов свыше 20'000 руб (до скидки). Скидка не распространяется на подарочные сертификаты.</p>
-                                                <p style="text-align: center;">
-                                                </p><p style="text-align: center;">
-
-
-                                                </p></div> <!-- .et_pb_text -->
-                                        </div> <!-- .et_pb_column -->
 
                                     </div> <!-- .et_pb_row -->
 
+
                                 </div>
+
                             </div> <!-- .entry-content -->
                             <div class="et_post_meta_wrapper">
 
@@ -1294,28 +1163,33 @@ $face = $_GET['face'];
 
             <div id="et-footer-nav">
                 <div class="container">
-                    <ul id="menu-footer-menu" class="bottom-nav"><li id="menu-item-1876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1876"><a href="https://photty.ru/event-photo/" class="menu-image-title-after"><span class="menu-image-title">Фотограф на мероприятие</span></a></li>
-                        <li id="menu-item-1877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1877"><a href="https://photty.ru/Family-photo/" class="menu-image-title-after"><span class="menu-image-title">Семейные фотосессии</span></a></li>
-                        <li id="menu-item-1878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1878"><a href="https://photty.ru/portrait/" class="menu-image-title-after"><span class="menu-image-title">Портретная съемка</span></a></li>
-                        <li id="menu-item-1879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1879"><a href="https://photty.ru/food-photo/" class="menu-image-title-after"><span class="menu-image-title">Съемка блюд</span></a></li>
-                        <li id="menu-item-2538" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2538"><a href="https://photty.ru/weddings/" class="menu-image-title-after"><span class="menu-image-title">Фотограф на свадьбу</span></a></li>
-                        <li id="menu-item-4215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4215"><a href="https://photty.ru/business-photo/" class="menu-image-title-after"><span class="menu-image-title">Деловой портрет</span></a></li>
-                        <li id="menu-item-4216" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4216"><a href="https://photty.ru/studio-faq/" class="menu-image-title-after"><span class="menu-image-title">Подготовка к студии</span></a></li>
-                        <li id="menu-item-1968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1968"><a href="https://photty.ru/pricing" class="menu-image-title-after"><span class="menu-image-title">Расчет стоимости</span></a></li>
-                        <li id="menu-item-2952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2952"><a href="https://photty.ru/projects/" class="menu-image-title-after"><span class="menu-image-title">Проекты</span></a></li>
-                        <li id="menu-item-1623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1623"><a href="https://photty.ru/faq" class="menu-image-title-after"><span class="menu-image-title">F.A.Q.</span></a></li>
-                        <li id="menu-item-1564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1564"><a href="https://photty.ru/dogovor-oferta/" class="menu-image-title-after"><span class="menu-image-title">Договор-оферта</span></a></li>
-                        <li id="menu-item-1880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1880"><a href="https://photty.SG" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="24" src="https://photty.ru/wp-content/uploads//2016/08/sg-flag-36x24.png" class="menu-image menu-image-title-after" alt="" srcset="https://photty.ru/wp-content/uploads/2016/08/sg-flag-36x24.png 36w, https://photty.ru/wp-content/uploads/2016/08/sg-flag-24x16.png 24w, https://photty.ru/wp-content/uploads/2016/08/sg-flag-48x32.png 48w, https://photty.ru/wp-content/uploads/2016/08/sg-flag.png 250w" sizes="(max-width: 36px) 100vw, 36px" /><span class="menu-image-title">PHOTTY.SG</span></a></li>
+                    <ul id="menu-footer-menu" class="bottom-nav"><li id="menu-item-1876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1876"><a href="//photty.ru/event-photo/" class="menu-image-title-after"><span class="menu-image-title">Фотограф на мероприятие</span></a></li>
+                        <li id="menu-item-27507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27507"><a href="//photty.ru/magnets/" class="menu-image-title-after"><span class="menu-image-title">Магниты и печать на выезде</span></a></li>
+                        <li id="menu-item-1877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1877"><a href="//photty.ru/Family-photo/" class="menu-image-title-after"><span class="menu-image-title">Семейные фотосессии</span></a></li>
+                        <li id="menu-item-1878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1878"><a href="//photty.ru/portrait/" class="menu-image-title-after"><span class="menu-image-title">Портретная съемка</span></a></li>
+                        <li id="menu-item-1879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1879"><a href="//photty.ru/food-photo/" class="menu-image-title-after"><span class="menu-image-title">Съемка блюд</span></a></li>
+                        <li id="menu-item-26569" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26569"><a href="//photty.ru/product/" class="menu-image-title-after"><span class="menu-image-title">Предметная съемка</span></a></li>
+                        <li id="menu-item-2538" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2538"><a href="//photty.ru/weddings/" class="menu-image-title-after"><span class="menu-image-title">Фотограф на свадьбу</span></a></li>
+                        <li id="menu-item-26511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26511"><a href="//photty.ru/video/" class="menu-image-title-after"><span class="menu-image-title">Видео</span></a></li>
+                        <li id="menu-item-4215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4215"><a href="//photty.ru/business-photo/" class="menu-image-title-after"><span class="menu-image-title">Деловой портрет</span></a></li>
+                        <li id="menu-item-4216" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4216"><a href="//photty.ru/studio-faq/" class="menu-image-title-after"><span class="menu-image-title">Подготовка к студии</span></a></li>
+                        <li id="menu-item-1968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1968"><a href="//photty.ru/pricing" class="menu-image-title-after"><span class="menu-image-title">Расчет стоимости</span></a></li>
+                        <li id="menu-item-2952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2952"><a href="//photty.ru/projects/" class="menu-image-title-after"><span class="menu-image-title">Проекты</span></a></li>
+                        <li id="menu-item-26595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26595"><a href="//photty.ru/articles/" class="menu-image-title-after"><span class="menu-image-title">Статьи</span></a></li>
+                        <li id="menu-item-1623" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1623"><a href="//photty.ru/faq" class="menu-image-title-after"><span class="menu-image-title">F.A.Q.</span></a></li>
+                        <li id="menu-item-1564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1564"><a href="//photty.ru/dogovor-oferta/" class="menu-image-title-after"><span class="menu-image-title">Договор-оферта</span></a></li>
+                        <li id="menu-item-26622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26622"><a href="//photty.ru/contacts" class="menu-image-title-after"><span class="menu-image-title">Контакты</span></a></li>
+                        <li id="menu-item-26956" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26956"><a href="//photty.ru/about/" class="menu-image-title-after"><span class="menu-image-title">О Компании</span></a></li>
+                        <li id="menu-item-26734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26734"><a href="//photty.ru/agreement/" class="menu-image-title-after"><span class="menu-image-title">Согласие на обработку персональных данных</span></a></li>
+                        <li id="menu-item-26922" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26922"><a href="https://www.instagram.com/photty.ru/" class="menu-image-title-after menu-image-not-hovered"><img width="25" height="25" src="https://photty.ru/wp-content/uploads//2018/04/instagram-logo-for-web.jpg" class="menu-image menu-image-title-after" alt="фотти инстаграм" srcset="https://photty.ru/wp-content/uploads/2018/04/instagram-logo-for-web.jpg 25w, https://photty.ru/wp-content/uploads/2018/04/instagram-logo-for-web-24x24.jpg 24w" sizes="(max-width: 25px) 100vw, 25px" /><span class="menu-image-title">Insta</span></a></li>
+                        <li id="menu-item-26923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26923"><a href="https://facebook.com/photty.ru" class="menu-image-title-after menu-image-not-hovered"><img width="25" height="25" src="https://photty.ru/wp-content/uploads//2018/04/facebook-logo-for-web-proper-new.jpg" class="menu-image menu-image-title-after" alt="facebook photty" srcset="https://photty.ru/wp-content/uploads/2018/04/facebook-logo-for-web-proper-new.jpg 25w, https://photty.ru/wp-content/uploads/2018/04/facebook-logo-for-web-proper-new-24x24.jpg 24w" sizes="(max-width: 25px) 100vw, 25px" /><span class="menu-image-title">fb</span></a></li>
+                        <li id="menu-item-26934" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26934"><a href="https://vk.com/phottyru" class="menu-image-title-after menu-image-not-hovered"><img width="25" height="25" src="https://photty.ru/wp-content/uploads//2018/04/vk-logo-for-web.jpg" class="menu-image menu-image-title-after" alt="вконтакте фотти" srcset="https://photty.ru/wp-content/uploads/2018/04/vk-logo-for-web.jpg 25w, https://photty.ru/wp-content/uploads/2018/04/vk-logo-for-web-24x24.jpg 24w" sizes="(max-width: 25px) 100vw, 25px" /><span class="menu-image-title">vk</span></a></li>
+                        <li id="menu-item-1880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1880"><a href="//photty.SG" class="menu-image-title-after menu-image-not-hovered"><img width="36" height="24" src="https://photty.ru/wp-content/uploads//2018/04/sg-flag-36x24-proper-36x24.png" class="menu-image menu-image-title-after" alt="photty singapore" srcset="https://photty.ru/wp-content/uploads/2018/04/sg-flag-36x24-proper.png 36w, https://photty.ru/wp-content/uploads/2018/04/sg-flag-36x24-proper-24x16.png 24w" sizes="(max-width: 36px) 100vw, 36px" /><span class="menu-image-title">PHOTTY.SG</span></a></li>
                     </ul>					</div>
             </div> <!-- #et-footer-nav -->
 
 
-            <div id="footer-bottom">
-                <div class="container clearfix">
 
-                    <p id="footer-info">Designed by <a href="http://www.elegantthemes.com" title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a href="http://www.wordpress.org">WordPress</a></p>
-                </div>	<!-- .container -->
-            </div>
         </footer> <!-- #main-footer -->
     </div> <!-- #et-main-area -->
 
@@ -1327,13 +1201,6 @@ $face = $_GET['face'];
     .et_pb_section_4.et_pb_section { background-color:#ffffff !important; }
     .et_pb_image_0 { max-width: 200px; text-align: center; }
 </style><div id="fb-root"></div>
-<script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 
 <script type="text/javascript">
     jQuery(document).ready(function(){
@@ -1342,51 +1209,10 @@ $face = $_GET['face'];
     });
 </script>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter35894790 = new Ya.Metrika({
-                    id:35894790,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/35894790" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-    (function(){ var widget_id = 'dTeUdoInhd';
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
-<!-- {/literal} END JIVOSITE CODE --><script type='text/javascript' src='https://photty.ru/wp-includes/js/admin-bar.min.js?ver=4.8.1'></script>
 <script type='text/javascript' src='https://photty.ru/wp-content/themes/Divi/includes/builder/scripts/frontend-builder-global-functions.js?ver=2.7.5'></script>
 <script type='text/javascript' src='https://photty.ru/wp-includes/js/comment-reply.min.js?ver=4.8.1'></script>
 <script type='text/javascript' src='https://photty.ru/wp-content/themes/Divi/includes/builder/scripts/jquery.mobile.custom.min.js?ver=2.7.5'></script>
 <script type='text/javascript' src='https://photty.ru/wp-content/themes/Divi/js/custom.js?ver=2.7.5'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var FB_WP=FB_WP||{};FB_WP.queue={_methods:[],flushed:false,add:function(fn){FB_WP.queue.flushed?fn():FB_WP.queue._methods.push(fn)},flush:function(){for(var fn;fn=FB_WP.queue._methods.shift();){fn()}FB_WP.queue.flushed=true}};window.fbAsyncInit=function(){FB.init({"xfbml":true});if(FB_WP && FB_WP.queue && FB_WP.queue.flush){FB_WP.queue.flush()}}
-    /* ]]> */
-</script>
-<script type="text/javascript">(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="http:\/\/connect.facebook.net\/en_US\/all.js";fjs.parentNode.insertBefore(js,fjs)}(document,"script","facebook-jssdk"));</script>
 <script type='text/javascript' src='https://photty.ru/wp-content/themes/Divi/includes/builder/scripts/jquery.fitvids.js?ver=2.7.5'></script>
 <script type='text/javascript' src='https://photty.ru/wp-content/themes/Divi/includes/builder/scripts/waypoints.min.js?ver=2.7.5'></script>
 <script type='text/javascript' src='https://photty.ru/wp-content/themes/Divi/includes/builder/scripts/jquery.magnific-popup.js?ver=2.7.5'></script>
@@ -1395,26 +1221,12 @@ $face = $_GET['face'];
     var et_pb_custom = {"ajaxurl":"https:\/\/photty.ru\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/photty.ru\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/photty.ru\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"23002219f1","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"1568244e69","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","is_builder_plugin_used":"","is_divi_theme_used":"1","widget_search_selector":".widget_search","is_ab_testing_active":"","page_id":"22020","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":""};
     /* ]]> */
 </script>
-<script type='text/javascript' src='https://photty.ru/wp-content/themes/Divi/includes/builder/scripts/frontend-builder-scripts.js?ver=2.7.5'></script>
-<script type='text/javascript' src='https://photty.ru/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
-<script type='text/javascript' src='https://photty.ru/wp-content/themes/Divi/includes/builder/scripts/jquery.hashchange.js?ver=2.7.5'></script>
-<script type='text/javascript' src='https://photty.ru/wp-content/plugins/caldera-forms/assets/build/js/jquery-baldrick.min.js?ver=1.5.5'></script>
-<script type='text/javascript' src='https://photty.ru/wp-content/plugins/caldera-forms/assets/build/js/ajax-core.min.js?ver=1.5.5'></script>
-<script type='text/javascript' src='https://photty.ru/wp-content/plugins/caldera-forms/assets/build/js/conditionals.min.js?ver=1.5.5'></script>
-<script type='text/javascript' src='https://photty.ru/wp-content/plugins/caldera-forms/assets/build/js/parsley.min.js?ver=1.5.5'></script>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var CF_API_DATA = {"rest":{"root":"https:\/\/photty.ru\/wp-json\/cf-api\/v2\/","tokens":{"nonce":"https:\/\/photty.ru\/wp-json\/cf-api\/v2\/tokens\/form"},"nonce":"77e2d29e91"},"nonce":{"field":"_cf_verify"}};
-    /* ]]> */
-</script>
+<script type="text/javascript" src="https://photty.ru/wp-content/themes/Divi/includes/builder/scripts/frontend-builder-scripts.js?ver=3.0.106"></script>
+<script type="text/javascript" src="https://photty.ru/wp-content/plugins/divi-builder/core/admin/js/common.js?ver=3.2.1"></script>
+<script type="text/javascript" src="https://photty.ru/wp-includes/js/wp-embed.min.js?ver=4.8.6"></script>
+<script type="text/javascript" src="https://photty.ru/wp-content/themes/Divi/includes/builder/scripts/jquery.hashchange.js?ver=3.0.106"></script>
 
-<script type='text/javascript' src='https://photty.ru/wp-content/plugins/caldera-forms/assets/build/js/caldera-forms-front.min.js?ver=1.5.5'></script>
-<div id="fb-root"></div><script type='text/javascript'>
-    /* <![CDATA[ */
-    var CF_API_DATA = {"rest":{"root":"https:\/\/photty.ru\/wp-json\/cf-api\/v2\/","tokens":{"nonce":"https:\/\/photty.ru\/wp-json\/cf-api\/v2\/tokens\/form"},"nonce":"77e2d29e91"},"nonce":{"field":"_cf_verify"}};
-    var CFFIELD_CONFIG = {"1":{"configs":{"fld_3092477":{"type":"button","id":"fld_3092477_1","default":false,"form_id":"CF59a7b52b33d4f","form_id_attr":"caldera_form_1"}},"fields":{"inputs":[{"type":"text","fieldId":"fld_7810243","id":"fld_7810243_1","options":[],"default":false},{"type":"email","fieldId":"fld_2964482","id":"fld_2964482_1","options":[],"default":false},{"type":"paragraph","fieldId":"fld_8002260","id":"fld_8002260_1","options":[],"default":false},{"type":"button","fieldId":"fld_3092477","id":"fld_3092477_1","options":[],"default":false},{"type":"utm","fieldId":"fld_2026098","id":"fld_2026098_1","options":[],"default":false}],"groups":[{"type":"radio","fieldId":"fld_8795905","id":"fld_8795905_1","options":["opt1074215","opt1576425"],"default":false},{"type":"radio","fieldId":"fld_3449161","id":"fld_3449161_1","options":["opt1856209","opt1160274","opt1984047","opt1628076","opt1523888"],"default":false},{"type":"radio","fieldId":"fld_7115678","id":"fld_7115678_1","options":["opt1897713","opt1549450","opt1845292"],"default":false},{"type":"radio","fieldId":"fld_6624765","id":"fld_6624765_1","options":["opt1171556","opt1176627","opt1122486","opt1504124","opt1504116"],"default":false},{"type":"radio","fieldId":"fld_8859246","id":"fld_8859246_1","options":["opt1282475","opt1888484","opt1488766"],"default":false}],"defaults":{"fld_7810243_1":false,"fld_8795905_1":false,"fld_3449161_1":false,"fld_2964482_1":false,"fld_7115678_1":false,"fld_6624765_1":false,"fld_8859246_1":false,"fld_8002260_1":false,"fld_3092477_1":false,"fld_2026098_1":false}},"error_strings":{"mixed_protocol":"Submission URL and current URL protocols do not match. Form may not function properly.","jquery_old":"An out of date version of jQuery is loaded on the page. Form may not function properly."}}};
-    /* ]]> */
-</script>
+<div id="fb-root"></div>
 <!--[if lte IE 8]>
 <script type="text/javascript">
     document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
@@ -1434,17 +1246,6 @@ $face = $_GET['face'];
 </script>
 <!--<![endif]-->
 
-
-<script>
-    window.addEventListener("load", function(){
-
-        jQuery(document).on('click dblclick', '#fld_3092477_1', function( e ){
-            jQuery('#fld_3092477_1_btn').val( e.type ).trigger('change');
-        });
-
-    });
-</script>
-<script type='text/javascript' src='/wp-content/themes/Divi/js/ga.js?ver=1'></script>
 
 <!--Вручную подключили последнюю версию jQuery для корректной работы скриптов-->
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -1600,51 +1401,7 @@ $face = $_GET['face'];
         })
     }
 
-    jQuery('#CF59a7b52b33d4f_1').submit(function(e){
-        e.preventDefault();
-        var comment = '';
-        var sel = '.caldera_forms_form label, .caldera_forms_form input, .caldera_forms_form textarea'
-        var answers = ["<?=$data['title_lead']?>","<?=$data['id']?>","https://phottyru.amocrm.ru/leads/detail/<?=$data['id']?>","http://<?=$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']?>"];
-        var custom = <?=$data['custom']?>;
-        answers = answers.concat(custom);
-        for(var i=0;i<jQuery(sel).length;i++)
-        {
-            var ob = jQuery(sel).eq(i)[0];
-            if(jQuery(ob).hasClass('control-label'))
-                comment+='\n'+jQuery(ob).html()+': ';
-            if(jQuery(ob).attr('type')=='text')
-            {
-                answers.push(jQuery(ob).val());
-                comment+=jQuery(ob).val();
-            }
-            if(jQuery(ob).attr('type')=='email')
-            {
-                answers.push(jQuery(ob).val());
-                comment+=jQuery(ob).val();
-            }
-            if(jQuery(ob)[0].tagName=='TEXTAREA')
-            {
-                answers.push(jQuery(ob).val());
-                comment+=jQuery(ob).val();
-            }
-            if((jQuery(ob).attr('type')=='radio')&&(jQuery(ob).is(':checked')))
-            {
-                answers.push(jQuery(ob).val());
-                comment+=jQuery(ob).val();
-            }
-        }
-        if(answers[24]=='')
-            answers.splice(24, 1);
-        console.log(answers);
-        jQuery.get('/gallery/table.php',{keys:JSON.stringify(answers)},function(data){
-            console.log(data);
-        })
-        jQuery('body').append('<div id="conspec" style="display: none"></div>');
-        jQuery('#conspec').html(comment);
-        jQuery('#conspec').find('span').remove();
-        //console.log(jQuery('#conspec').html());
-        jQuery.post('https://photty.ru/amo/amo5.php',{lead_id:<?=$data['id']?>,comment:jQuery('#conspec').html()},function(data){console.log(data)})
-    })
+
 
     function changeText()
     {
